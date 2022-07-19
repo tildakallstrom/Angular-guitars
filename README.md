@@ -1,3 +1,7 @@
+# Guitars
+
+This is the project that I'm currently working on.
+
 # NgGuitars
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
