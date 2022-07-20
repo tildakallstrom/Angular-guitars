@@ -9,6 +9,9 @@ import { GuitarCatalougePage } from './pages/guitar-catalouge/guitar-catalouge.p
 import { ProfilePage } from './pages/profile/profile.page';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { FormsModule } from '@angular/forms';
+import { GuitarListComponent } from './components/guitar-list/guitar-list.component';
+import { GuitarListItemComponent } from './components/guitar-list-item/guitar-list-item.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [ //components
@@ -16,7 +19,10 @@ import { FormsModule } from '@angular/forms';
     LoginPage,
     GuitarCatalougePage,
     ProfilePage,
-    LoginFormComponent
+    LoginFormComponent,
+    GuitarListComponent,
+    GuitarListItemComponent,
+    NavbarComponent
   ],
   imports: [ //modules
     BrowserModule,
