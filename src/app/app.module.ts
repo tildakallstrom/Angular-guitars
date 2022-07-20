@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { GuitarListComponent } from './components/guitar-list/guitar-list.component';
 import { GuitarListItemComponent } from './components/guitar-list-item/guitar-list-item.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FavouriteButtonComponent } from './components/favourite-button/favourite-button.component';
 
 @NgModule({
   declarations: [ //components
@@ -22,7 +23,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginFormComponent,
     GuitarListComponent,
     GuitarListItemComponent,
-    NavbarComponent
+    NavbarComponent,
+    FavouriteButtonComponent
   ],
   imports: [ //modules
     BrowserModule,

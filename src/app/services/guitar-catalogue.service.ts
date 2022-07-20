@@ -30,6 +30,11 @@ export class GuitarCatalogueService {
   constructor(private readonly http: HttpClient) { }
 
   public findAllGuitars(): void {
+
+    if (this._guitars.length > 0 || this.loading){
+      return;
+    }
+
     this._loading = true;
     this.http.get<Guitar[]>(apiGuitars)
     .pipe(
@@ -46,4 +51,9 @@ export class GuitarCatalogueService {
       }
     })
   }
+
+   //get guitar based on id
+   public guitarById(id: string): Guitar | undefined {
+    return this._guitars.find((guitar: Guitar) => guitar.id === id);
+}
 }

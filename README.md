@@ -1,6 +1,6 @@
 # Guitars
 
-This is the project that I'm currently working on.
+A project using Angular and Tailwind to let users login, see guitars and add guitars to favourites.
 
 # NgGuitars
 
