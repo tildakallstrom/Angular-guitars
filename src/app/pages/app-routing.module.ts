@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { AuthGuard } from "../guards/auth.guard";
 import { GuitarCatalougePage } from "./guitar-catalouge/guitar-catalouge.page";
 import { LoginPage } from "./login/login.page";
 import { ProfilePage } from "./profile/profile.page";
@@ -16,11 +17,13 @@ const routes: Routes = [
     }, 
     {
         path: "guitars",
-        component: GuitarCatalougePage
+        component: GuitarCatalougePage,
+        canActivate: [ AuthGuard ]
     },
     {
         path: "profile",
-        component: ProfilePage
+        component: ProfilePage,
+        canActivate: [ AuthGuard ]
     }
 ]
 
